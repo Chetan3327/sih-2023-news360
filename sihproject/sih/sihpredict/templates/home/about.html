@@ -1,0 +1,181 @@
+{% include "navbar.html" %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+          }
+          
+          html {
+            box-sizing: border-box;
+          }
+          
+          *, *:before, *:after {
+            box-sizing: inherit;
+          }
+          
+          .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+          }
+          
+          .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+          }
+          
+          .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+          }
+          
+          .container {
+            padding: 0 16px;
+          }
+          
+          .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          
+          .title {
+            color: grey;
+          }
+          
+          .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+          }
+          
+          .button:hover {
+            background-color: #555;
+          }
+          
+          @media screen and (max-width: 650px) {
+            .column {
+              width: 100%;
+              display: block;
+            }
+          }
+
+          #team {
+            font-size: xx-large;
+            margin-bottom: 1%;
+            text-decoration: underline;
+            text-decoration-style: unset;
+        }
+
+        p {
+          margin-top: 5px;
+      }
+    </style>
+</head>
+<body>
+    
+      <br>
+      <h2 style="text-align:center" id="team">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="https://media.licdn.com/dms/image/D5635AQHupdltF_cz7A/profile-framedphoto-shrink_400_400/0/1664347805643?e=1695794400&v=beta&t=1mFKYuJX-OopwvYiVfOPniGLUtCLXLTHhv91ZvJEiXY" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Aanya Sharma (CSE)</h2>
+              <p class="title">Team Leader</p>
+              <p>Team leader and as a Web developer Role</p>
+              <p>aanya@example.com</p>
+              <a href="https://www.linkedin.com/in/aanya-sharma-2841b2248/"><p><button class="button">Contact</button></p></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="https://media.licdn.com/dms/image/D4D03AQEZ7cImGW887g/profile-displayphoto-shrink_400_400/0/1675148010549?e=1700697600&v=beta&t=-RIm81Y7MkO_33ut-J6-oAp1CoTQ0BorJaD-_nJ1PGg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Tanmay (CSE)</h2>
+              <p class="title">Backend Developer</p>
+              <p>Backend Developer, using Django as framework</p>
+              <p>tanmay@example.com</p>
+              <a href="https://www.linkedin.com/in/tanmay-gupta-b24452163/" style="text-decoration: none;"><p><button class="button">Contact</button></p></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="https://media.licdn.com/dms/image/D4D03AQFOS3Ml7ynvFQ/profile-displayphoto-shrink_400_400/0/1683097900576?e=1700697600&v=beta&t=DtrJgMFg4UKyajToU8mjHhn05_ijkXrGDeZ1QJkhgEA" alt="John" style="width:100%">
+            <div class="container">
+              <h2>Naman garg (CSE)</h2>
+              <p class="title">Machine Learning Expert</p>
+              <p>Working as Machine Learning Model developer</p>
+              <p>naman@example.com</p>
+              <a href="https://www.linkedin.com/in/naman-garg-b3183a1b1/"><p><button class="button">Contact</button></p></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="https://media.licdn.com/dms/image/D4D03AQExQaOHnnoaxw/profile-displayphoto-shrink_400_400/0/1683746249060?e=1700697600&v=beta&t=Y9Gvi381OdozxR5Qbyoy0FPm6giOELYxCuE431X3qLU" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Chetan Chauhan (CSE)</h2>
+              <p class="title">Machine Learning Expert</p>
+              <p>Working as Machine Learning Model developer</p>
+              <p>jane@example.com</p>
+              <a href="https://www.linkedin.com/in/chetan-chauhan-860106258/"><p><button class="button">Contact</button></p></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="https://media.licdn.com/dms/image/D5603AQGuG0rOHKdESA/profile-displayphoto-shrink_400_400/0/1676005642856?e=1700697600&v=beta&t=TahIXRSJxEdSMVzkwnXBBMmUAa2OfIAM_PkaC5JA8Jg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Dev Gupta (AI&DS)</h2>
+              <p class="title">Machine Learning Expert</p>
+              <p>Working as Machine Learning Model developer</p>
+              <p>mike@example.com</p>
+              <a href="https://www.linkedin.com/in/dev-gupta4/"><p><button class="button">Contact</button></p></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="https://media.licdn.com/dms/image/D4D03AQE-NBk5HxJSQg/profile-displayphoto-shrink_400_400/0/1669194828912?e=1700697600&v=beta&t=Tvp_gSRrivPD-ESpAN2f3soAW76uymX_XgmwLCyZZdY" alt="John" style="width:100%">
+            <div class="container">
+              <h2>Vijay Kumar (AI&DS)</h2>
+              <p class="title">Machine Learning Expert</p>
+              <p>Working as Machine Learning Model developer</p>
+              <p>john@example.com</p>
+              <a href="https://www.linkedin.com/in/vijay-kumar-bb26081b0/"><p><button class="button">Contact</button></p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+
+{% include "footer.html" %} 
